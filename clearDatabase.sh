@@ -109,7 +109,7 @@ mongo sportsense --eval 'db.createCollection("matches", {
           bsonType: "string"
         },
         homeTeamColor: {
-          description: "Color of the away team",
+          description: "Color of the home team",
           bsonType: "string"
         },
         awayTeamColor: {
@@ -307,7 +307,7 @@ mongo sportsense --eval 'db.createCollection("nonatomicEvents", {
       properties: {
         type: {
           description: "Type of the data item (stream name of the data stream element)",
-          type: "string"
+          bsonType: "string"
         },
         matchId: {
           description: "Identifier of the match the data item belongs to",
