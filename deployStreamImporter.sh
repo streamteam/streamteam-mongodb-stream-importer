@@ -32,7 +32,7 @@ mvn package
 ssh -i ~/.ssh/lukasPMAAS ubuntu@$IP "rm -Rf $FOLDER"
 ssh -i ~/.ssh/lukasPMAAS ubuntu@$IP "mkdir $FOLDER"
 ssh -i ~/.ssh/lukasPMAAS ubuntu@$IP "mkdir $FOLDER/target"
-scp -i ~/.ssh/lukasPMAAS ./target/streamteam-mongodb-stream-importer-1.0.1-jar-with-dependencies.jar ubuntu@$IP:$FOLDER/target
+scp -i ~/.ssh/lukasPMAAS ./target/streamteam-mongodb-stream-importer-1.1.0-jar-with-dependencies.jar ubuntu@$IP:$FOLDER/target
 scp -i ~/.ssh/lukasPMAAS ./startStreamImporter.sh ubuntu@$IP:$FOLDER
 scp -i ~/.ssh/lukasPMAAS ./stopStreamImporter.sh ubuntu@$IP:$FOLDER
 scp -i ~/.ssh/lukasPMAAS ./clearDatabase.sh ubuntu@$IP:$FOLDER

@@ -22,4 +22,4 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd $DIR
-java -DlogFileName=streamImporter -jar ./target/streamteam-mongodb-stream-importer-1.0.1-jar-with-dependencies.jar
+java -DlogFileName=streamImporter -jar ./target/streamteam-mongodb-stream-importer-1.1.0-jar-with-dependencies.jar

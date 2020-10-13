@@ -381,8 +381,3 @@ mongo sportsense --eval 'db.events.createIndexes( [ {type: 1}, {matchId: 1}, {ts
 mongo sportsense --eval 'db.statistics.createIndexes( [ {type: 1}, {matchId: 1}, {ts: 1}, {videoTs: 1}, {xyCoords: "2d"}, {zCoords: 1}, {playerIds: 1}, {teamIds: 1} ]);'
 mongo sportsense --eval 'db.states.createIndexes( [ {type: 1}, {matchId: 1}, {ts: 1}, {videoTs: 1}, {xyCoords: "2d"}, {zCoords: 1}, {playerIds: 1}, {teamIds: 1} ]);'
 mongo sportsense --eval 'db.nonatomicEvents.createIndexes( [ {type: 1}, {matchId: 1}, {ts: 1}, {videoTs: 1}, {xyCoords: "2d"}, {zCoords: 1}, {playerIds: 1}, {teamIds: 1}, {eventId: 1}, {phase: 1}, {seqNo: 1} ]);'
-
-#https://mobilemonitoringsolutions.com/memory-errors-mongodb-resolve/
-echo "Increase MongoDB sort memory from 32MB to 256MB"
-mongo 10.34.58.65/admin --eval 'db.runCommand( { setParameter : 1, "internalQueryExecMaxBlockingSortBytes" : 268435456 } )'
-
