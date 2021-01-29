@@ -24,7 +24,7 @@
 
     <groupId>ch.unibas.dmi.dbis</groupId>
     <artifactId>streamteam-mongodb-stream-importer</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
 
     <name>StreamTeam - MongoDB Stream Importer</name>
     <url>https://dbis.dmi.unibas.ch/research/projects/streamTeam/</url>
@@ -68,7 +68,7 @@
         <dependency>
             <groupId>ch.unibas.dmi.dbis</groupId>
             <artifactId>streamteam-data-model</artifactId>
-            <version>1.1.0</version>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
 
@@ -79,7 +79,6 @@
         <log4j.version>2.13.3</log4j.version>
         <mongodb.version>4.1.0</mongodb.version> <!-- According to https://docs.mongodb.com/drivers/java/ 4.1.0 is the first driver version which supports MongoDB 4.4.x -->
         <javatuples.version>1.2</javatuples.version>
-        <junit.version>4.12</junit.version>
     </properties>
 
     <build>
