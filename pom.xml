@@ -74,7 +74,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kafka.version>2.0.1</kafka.version>
+        <kafka.version>2.6.3</kafka.version>
         <slf4j.version>1.7.30</slf4j.version>
         <log4j.version>2.13.3</log4j.version>
         <mongodb.version>4.1.0</mongodb.version> <!-- According to https://docs.mongodb.com/drivers/java/ 4.1.0 is the first driver version which supports MongoDB 4.4.x -->
